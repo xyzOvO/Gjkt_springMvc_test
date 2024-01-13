@@ -8,4 +8,6 @@ public interface WebApplicationContext extends ApplicationContext {
 
     String CHILD_WEB_APPLICATION_CONTEXT_ATTRIBUTE = WebApplicationContext.class.getName() + ".CHILD";
 
+    public static final String ROOT_NAME =  WebApplicationContext.class.getName() + "ROOT";
+
 }

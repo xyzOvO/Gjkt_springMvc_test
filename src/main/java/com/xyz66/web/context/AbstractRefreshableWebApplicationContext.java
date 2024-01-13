@@ -39,7 +39,7 @@ public abstract class AbstractRefreshableWebApplicationContext extends AbstractR
     @Override
     protected void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) {
         // 注册ServletContext后置处理器
-        beanFactory.addBeanPostProcessor(new ServletContextAwareProcessor(this.servletContext,this.servletConfig));
+        beanFactory.addBeanPostProcessor(new ServletBeanPostProcess(this.servletContext,this.servletConfig));
 
         /**
          * A类中有test方法，B类实现A类，且有一个test属性。也就是说当前会有一个set方法和一个set注入。
