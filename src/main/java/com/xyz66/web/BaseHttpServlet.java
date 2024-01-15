@@ -51,5 +51,5 @@ public abstract class BaseHttpServlet extends HttpServlet {
         }
     }
 
-    protected abstract void onRefresh(ApplicationContext applicationContext);
+    protected abstract void onRefresh(ApplicationContext webApplicationContext);
 }
